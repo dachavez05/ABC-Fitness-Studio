@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+    --brand: #00ff00;
+    --brand-light: #519c4f;
+    --black: #1e1b1c;
+    --crimson: #ae232d;
+    --ivory: #ffffee;
+    --font-color: #00231c;
+    --bg-dark: #0d0d0d;
+    --bg-light: #dedede;
+
+    --font-display: 2.5rem;
+    --font-title-large: 1.75rem;
+    --font-title: 1.5rem;
+    --font-subtitle: 1.25rem;
+    --font-body-large: 1.125rem;
+    --font-body: 1rem;
+    --font-body-strong: var(--font-body);
+    --font-caption: 0.875rem;
+
+    --font-family-title: 'Arial Bold', sans-serif;
+    --font-family-subtitle: 'Comfortaa', sans-serif;
+    --font-family-body: 'Calibri', sans-serif;
+    --font-family-caption: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: white;
+}
+
+body {
+    font-family: var(--font-family-body);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    color: var(--ivory);
+    padding: 2rem 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+    filter: blur(4px) brightness(0.5);
+}
+
+.hero-text,
+.hero-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: var(--font-family-title);
+    font-size: var(--font-display);
+}
+
+.hero p {
+    font-family: var(--font-family-subtitle);
+    font-size: var(--font-subtitle);
+}
+
+.hero-btn {
+    background: var(--brand);
+    text-decoration: none;
+    color: var(--black);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-body-large);
+    font-family: Arial;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 90%;
+}
+
+/* Navigation - Start */
+.nav-toggle {
+    position: absolute;
+    opacity: 0;
+}
+
+.nav-pill {
+    position: fixed;
+    font-family: Arial;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    background: var(--bg-dark);
+    z-index: 60;
+    width: auto;
+}
+
+.nav-logo img {
+    height: 2rem;
+    display: block;
+}
+
+.hamburger {
+    position: relative;
+    width: 28px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 9px;
+    margin: auto;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    display: none;
+}
+
+.nav-links {
+    display: none;
+    list-style: none;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 50;
+    background: var(--bg-dark);
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0);
+}
+
+.modal-links {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-toggle:checked~.nav-modal {
+    display: block;
+}
+
+.nav-toggle:checked+.nav-pill .hamburger span {
+    display: none;
+}
+
+.nav-toggle:checked+.nav-pill .hamburger::before {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.nav-toggle:checked+.nav-pill .hamburger::after {
+    display: block;
+    transform: rotate(-45deg);
+}
+/* Navigation - End */
+
+@media (min-width:768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-modal {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
