@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Events | ABC Fitness Studio</title>
+  </head>
+  <body>
+    <header>
+      <!-- for nav open/close mobile -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <!-- mobile nav bar -->
+      <nav class="nav-pill">
+        <a href="/" class="nav-logo">
+          <img
+            src="assets/Client2_LogoPalette1_00FF00.png"
+            alt="ABC Fitness Studio Logo"
+          />
+        </a>
+
+        <!-- for desktop layout -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+
+        <!-- hamburger -->
+        <label for="nav-toggle" class="nav-icon-btn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+
+      <!-- mobile fullscreen menu -->
+      <div class="nav-modal">
+        <ul class="modal-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero-half">
+        <!-- video for background -->
+
+        <video class="hero-video" id="hero-half" preload="auto">
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+          This browser doesn't support the video tag.
+        </video>
+        <div class="hero-text">
+          <h1>EVENTS</h1>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <h2 class="title-h2">Featured</h2>
+        <div class="featured-content">
+          <h2>Zumba Dance Party</h2>
+          <p class="event-date">Oct. 4th, 2025</p>
+          <p>
+            Join us for a high-energy Zumba class! Dance, sweat, and have fun
+            with friends while burning calories to upbeat music. All fitness
+            levels welcome. Bring your best moves!
+          </p>
+          <button>Register</button>
+        </div>
+      </section>
+
+      <section class="events-section">
+        <h2 class="title-h2">Upcoming Events</h2>
+
+        <div class="events-content">
+          <article class="card">
+            <h3>Goats & Yoga</h3>
+            <p class="event-date">Nov. 15, 2025</p>
+            <p>
+              Aute irure aute aliquip velit amet. Et voluptate laboris ex ad
+              nulla quis id.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Goats & Yoga</h3>
+            <p class="event-date">Nov. 15, 2025</p>
+            <p>
+              Dolor in occaecat non. Incididunt velit est magna labore est eu
+              voluptate.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Goats & Yoga</h3>
+            <p class="event-date">Nov. 15, 2025</p>
+            <p>
+              Dolor et sit aliqua non aute eiusmod. Sit voluptate non in
+              proident labore.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Goats & Yoga</h3>
+            <p class="event-date">Nov. 15, 2025</p>
+            <p>
+              Occaecat tempor sit laboris nulla minim cillum. Ex id consectetur.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section class="links">
+        <div class="col-1">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="#">Events</a>
+        </div>
+        <div class="col-2">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+      <div class="col-3">
+        <h1>ABC Fitness Studio</h1>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f8afc3b767.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

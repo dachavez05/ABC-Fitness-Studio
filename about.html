@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>About | ABC Fitness Studio</title>
+  </head>
+  <body>
+    <header>
+      <!-- for nav open/close mobile -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <!-- mobile nav bar -->
+      <nav class="nav-pill">
+        <a href="/" class="nav-logo">
+          <img
+            src="assets/Client2_LogoPalette1_00FF00.png"
+            alt="ABC Fitness Studio Logo"
+          />
+        </a>
+
+        <!-- for desktop layout -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+
+        <!-- hamburger -->
+        <label for="nav-toggle" class="nav-icon-btn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+
+      <!-- mobile fullscreen menu -->
+      <div class="nav-modal">
+        <ul class="modal-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero-half">
+        <!-- video for background -->
+
+        <video class="hero-video" id="hero-half" preload="auto">
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+          This browser doesn't support the video tag.
+        </video>
+        <div class="hero-text">
+          <h1>ABOUT</h1>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h2 class="title-h2">Who Are We?</h2>
+        <div class="about-content">
+          <img
+            src="assets/Client2_GroupYoga.png"
+            alt="Group of people doing yoga in a studio"
+          />
+          <div class="about-text">
+            <h3>ABC Fitness Studio</h3>
+            <p>
+              Cillum duis anim sint culpa consectetur dolore aliquip ex velit ad
+              sint adipisicing dolore. Incididunt mollit ex culpa commodo aute
+              incididunt dolore adipisicing excepteur nulla.
+            </p>
+            <p>
+              Cillum duis anim sint culpa consectetur dolore aliquip ex velit ad
+              sint adipisicing dolore. Incididunt mollit ex culpa commodo aute
+              incididunt dolore adipisicing excepteur nulla.
+            </p>
+            <p>
+              Cillum duis anim sint culpa consectetur dolore aliquip ex velit ad
+              sint adipisicing dolore. Incididunt mollit ex culpa commodo aute
+              incididunt dolore adipisicing excepteur nulla.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hours-section">
+        <div class="hours-content">
+          <h2 class="title-h2">Studio Hours</h2>
+          <table class="hours-table">
+            <tr>
+              <td>Monday</td>
+              <td>6am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>6am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>6am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>6am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>6am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8am - 6pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2 class="title-h2">Get in Touch with Us</h2>
+        <form id="contact-form" class="contact-form">
+          <label for="contact-name">Name*</label>
+          <input type="text" id="contact-name" required />
+
+          <label for="contact-email">Email*</label>
+          <input type="email" id="contact-email" required />
+
+          <label for="contact-phone">Phone Number</label>
+          <input type="tel" id="contact-phone" />
+
+          <label for="contact-message">Message*</label>
+          <textarea id="contact-message" rows="4" required></textarea>
+
+          <label>
+            <input type="checkbox" id="special-request" />
+            Special Request
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section class="links">
+        <div class="col-1">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="col-2">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+      <div class="col-3">
+        <h1>ABC Fitness Studio</h1>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f8afc3b767.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>

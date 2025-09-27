@@ -4,39 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <script src="https://kit.fontawesome.com/f8afc3b767.js" crossorigin="anonymous"></script>
-
-    <title>ABC Fitness Studio | Home</title>
+    <title>ABC Fitness Studio</title>
   </head>
   <body>
     <header>
+      <!-- for nav open/close mobile -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
+      <!-- mobile nav bar -->
       <nav class="nav-pill">
         <a href="/" class="nav-logo">
-          <img src="/assets/Client2_LogoPalette1_00FF00.png" alt="ABC Fitness" />
+          <img
+            src="assets/Client2_LogoPalette1_00FF00.png"
+            alt="ABC Fitness Studio Logo"
+          />
         </a>
 
-        <!-- hamburger -->
-        <label for="nav-toggle" class="hamburger">
-          <span></span><span></span><span></span>
-        </label>
-
-        <!-- desktop links -->
+        <!-- for desktop layout -->
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="events.html">Events</a></li>
         </ul>
+
+        <!-- hamburger -->
+        <label for="nav-toggle" class="nav-icon-btn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
       </nav>
 
       <!-- mobile fullscreen menu -->
       <div class="nav-modal">
         <ul class="modal-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="events.html">Events</a></li>
@@ -46,6 +50,7 @@
 
     <main>
       <section class="hero">
+        <!-- video for background -->
         <video
           class="hero-video"
           autoplay
@@ -54,35 +59,80 @@
           playsinline
           preload="auto"
         >
-          <source src="/assets/hero-video.mp4" type="video/mp4" />
+          <source src="assets/hero-video.mp4" type="video/mp4" />
           This browser doesn't support the video tag.
         </video>
         <div class="hero-text">
           <h1>Welcome to ABC Fitness Studio</h1>
-          <p>Your journey to a healthier life starts here.</p>
+          <p>Bringing our community together through fitness and well-being.</p>
         </div>
-        <a href="gallery.html" class="hero-btn">Explore Gallery</a>
+        <a href="events.html" class="hero-btn">Find Classes</a>
       </section>
 
+      <!-- Shopping Promo -->
+      <section class="promo">
+        <h2>Special Offer!</h2>
+        <p>Sign up this week and get your first class FREE.</p>
+      </section>
+
+      <!-- Image Gallery -->
+      <section class="images">
+        <div class="image-grid">
+          <img
+            src="assets/Client2_IndividualKickboxing.png"
+            alt="Woman practicing kickboxing on a punching bag"
+          />
+          <img
+            src="assets/Client2_GroupPilates.png"
+            alt="Women on workout mats performing pilates exercise"
+          />
+          <img
+            src="assets/Client2_IndividualYoga.png"
+            alt="Woman performing downward dog yoga pose on a mat in a fitness studio"
+          />
+        </div>
+      </section>
+
+      <!-- Categories of Products -->
       <section class="categories">
-        
+        <h2 class="title-h2">Browse Categories</h2>
+        <div class="category-list">
+          <div class="category"><h3>YOGA</h3></div>
+          <div class="category"><h3>PILATES</h3></div>
+          <div class="category"><h3>KICKBOXING</h3></div>
+          <div class="category"><h3>EQUIPMENT</h3></div>
+        </div>
       </section>
 
+      <!-- Customer Perks -->
       <section class="perks">
+        <h2 class="title-h2">Our Perks</h2>
 
+        <div class="perks-list">
+          <div class="perk">
+            <i class="fa-solid fa-dumbbell fa-3x"></i>
+            <h3>Certified Trainers</h3>
+            <p>Work with experienced professionals.</p>
+          </div>
+          <div class="perk">
+            <i class="fa-solid fa-users fa-3x"></i>
+            <h3>Community Focused</h3>
+            <p>Join a supportive fitness community.</p>
+          </div>
+          <div class="perk">
+            <i class="fa-solid fa-clock fa-3x"></i>
+            <h3>Flexible Scheduling</h3>
+            <p>Classes that fit your busy life.</p>
+          </div>
+        </div>
       </section>
-
     </main>
 
     <footer>
       <section class="newsletter">
         <h2>Subscribe to our Newsletter</h2>
-        <form class="newsletter-form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            required
-          />
+        <form id="subscribe-form" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
           <button type="submit">Subscribe</button>
         </form>
       </section>
@@ -90,21 +140,46 @@
       <section class="links">
         <div class="col-1">
           <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Gallery</a>
-          <a href="#">Events</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="events.html">Events</a>
         </div>
         <div class="col-2">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-tiktok"></i>
-          <i class="fa-brands fa-twitter"></i>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
         </div>
-        <div class="col-3">
-          <h4>ABC Fitness Studio</h4>
-        </div>
-
       </section>
+      <div class="col-3">
+        <h1>ABC Fitness Studio</h1>
+      </div>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f8afc3b767.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
