@@ -624,7 +624,7 @@ img {
 
 /* Footer - Start */
 .newsletter {
-    background-image: url('/assets/Client2_GroupKickboxing.png');
+    background-image: url('../assets/Client2_GroupKickboxing.png');
     height: 50vh;
     background-size: cover;
     background-position: top;
